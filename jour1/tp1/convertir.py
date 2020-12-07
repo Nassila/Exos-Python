@@ -1,7 +1,7 @@
 #coding:utf-8
+montant = int(input("Entre le montant de "))
 devise = str(input("Entre la devise "))
-print("ta devise de depart {} est".format(devise))
 if (devise == "€"):
-	print("converti en $")
+	print("montant en € en {}".format(montant*0.83))
 else:
-	print("converti en €")
+	print("montant en $ en {}".format(montant/0.83))
