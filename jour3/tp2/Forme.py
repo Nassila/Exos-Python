@@ -19,7 +19,6 @@ class Forme:
 class Rectangle(Forme):
 	def __init__(self,point,origine):
 		Forme.__init__(self,point,origine)
-		self.valeur = valeur
 	
 	def calculer_distance(self):
 		print("argent...")
@@ -30,7 +29,6 @@ class Rectangle(Forme):
 class Cercle(Forme):
 	def __init__(self,point,origine):
 		Forme.__init__(self,point,origine)
-		self.valeur = valeur
 	
 	def calculer_distance(self):
 		print("argent...")
