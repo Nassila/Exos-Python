@@ -14,6 +14,9 @@ class Humain:
 	@classmethod
 	def changer_planete(cls, nouvelle_planete):
 		Humain.lieu_habitation = nouvelle_planete
+		"""La fonction @classmethod peut également être appelée sans instancier la classe, mais sa définition 
+		suit la sous-classe, et non la classe Parent, via l'héritage. 
+		C'est parce que le premier argument de la fonction @classmethod doit toujours être cls (class)."""
 
 	#changer_planete = classmethod(changer_planete)
 
@@ -21,6 +24,8 @@ class Humain:
 	@staticmethod
 	def definition():
 		print("L'Humain est classé comme l'être vivant le plus évolué")
+		"""La fonction @staticmethod n'est rien de plus qu'une fonction définie à l'intérieur d'une classe. 
+		Il est appelable sans instancier la classe au préalable. Sa définition est immuable par héritage."""
 	#definition = staticmethod(definition)
 
 # PROGRAMME PRINCIPAL
